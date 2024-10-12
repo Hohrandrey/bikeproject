@@ -8,7 +8,10 @@ public class BikeDriver {
 		RoadBike bike2 = new RoadBike("drop", "tourer", "semi-grip", "comfort", 14, 25, 18);		
 		MountainBike bike3 = new MountainBike();
 		Bike bike4 = new Bike();
-		
+
+		bike1.setTyreWidth("22");
+
+
 		bike1.printDescription();
 		bike2.printDescription();
 		bike3.printDescription();

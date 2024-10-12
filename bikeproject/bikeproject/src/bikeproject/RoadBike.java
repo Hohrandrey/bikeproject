@@ -1,6 +1,6 @@
 package bikeproject;
 
-public class RoadBike extends Bike{
+public class RoadBike extends Bike implements RoadParts{
 	
 	private int  tyreWidth, postHeight;
 	
@@ -20,7 +20,31 @@ public class RoadBike extends Bike{
 		this.tyreWidth = tyreWidth;
 		this.postHeight = postHeight;
 	}//end constructor
-	
+
+	public void setTyreWidth(String newValue) {
+		try {
+			this.tyreWidth = Integer.parseInt(newValue);
+		} catch (NumberFormatException e) {
+			System.out.println("Invalid tyre width value. Please enter a number.");
+		}
+	}
+
+	public String getTyreWidth() {
+		return String.valueOf(this.tyreWidth);
+	}
+
+	public void setPostHeight(String newValue) {
+		try {
+			this.postHeight = Integer.parseInt(newValue);
+		} catch (NumberFormatException e) {
+			System.out.println("Invalid post height value. Please enter a number.");
+		}
+	}
+
+	public String getPostHeight() {
+		return String.valueOf(this.postHeight);
+	}
+
 	public void printDescription()
 	{
 		super.printDescription();
