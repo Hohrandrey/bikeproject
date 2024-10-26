@@ -8,4 +8,5 @@ public interface MountainParts {
 
     void setType(String newValue);
     String getType();
+
 }

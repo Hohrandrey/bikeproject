@@ -9,7 +9,7 @@ public class BikeDriver {
 		MountainBike bike3 = new MountainBike();
 		Bike bike4 = new Bike();
 
-		bike1.setTyreWidth("22");
+		bike1.setTyreWidth("20");
 
 
 		bike1.printDescription();
